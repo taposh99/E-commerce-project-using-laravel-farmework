@@ -19,6 +19,7 @@
                         <th>price</th>
                         <th>description</th>
                         <th>image</th>
+                        <th>status</th>
                         <th>Action</th>
                     </tr>
                     </thead>
@@ -36,9 +37,17 @@
                         <td>
                             <img src="{{ asset($product->image) }}" style="height: 50px;width: 50px" alt="">
                         </td>
+                        <td>{{ $product->status==1?'published':'unpublished' }}</td>
+
                         <td>
-                            <a href="{{route('status',['id'=>$product->id])}}" class="btn btn-primary">published</a>
-                            <a href="" class="btn btn-primary">Edit</a>
+                            @if($product->status==1)
+                            <a href="{{route('status',['id'=>$product->id])}}" class="btn btn-warning">unpublished</a>
+                            @else
+                                <a href="{{route('status',['id'=>$product->id])}}" class="btn btn-primary">published</a>
+                            @endif
+
+
+                                <a href="{{route('edit',['id'=>$product->id])}}" class="btn btn-primary">Edit</a>
                             <form action="" method="post">
                                 @csrf
                                 <input type="hidden" name="blog_id" value="">

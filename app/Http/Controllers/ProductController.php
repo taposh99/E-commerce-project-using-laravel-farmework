@@ -35,7 +35,41 @@ class ProductController extends Controller
         ]);
     }
     public function status($id){
-        
+        $product=Product::find($id);
+        if ($product->status==1){
+            $product->status=0;
+            $product->save();
+            return back();
+        }
+        else{
+            $product->status=1;
+            $product->save();
+            return back();
+        }
     }
+    public function edit($id){
+        $product=Product::find($id);
+        return view('admin.product.edit-product',[
+            'product'=>$product
+        ]);
+    }
+    public function updateProduct( Request $request){
+        $product=Product::find($request->product_id);
+        $product->product_name=$request->product_name;
+        $product->category_name=$request->category_name;
+        $product->brand_name=$request->brand_name;
+        $product->price=$request->price;
+        $product->description=$request->description;
+        if ($request->file('image')){
+            if ($product->image){
+                unlink($product->image);
+            }
+            $product->image =$this->saveImage($request);
+        }
+
+        $product->save();
+        return redirect('manage-product');
+    }
+
 
 }

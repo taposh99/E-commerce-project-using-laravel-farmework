@@ -34,5 +34,7 @@ Route::middleware([
     Route::get('/manage-product',[\App\Http\Controllers\ProductController:: class,'manageProduct'])->name('manage-product');
     Route::post('/new-product',[\App\Http\Controllers\ProductController:: class,'saveProduct'])->name('new-product');
     Route::get('/status/{id}',[\App\Http\Controllers\ProductController:: class,'status'])->name('status');
+    Route::get('/edit/{id}',[\App\Http\Controllers\ProductController:: class,'edit'])->name('edit');
+    Route::get('/update-product',[\App\Http\Controllers\ProductController:: class,'updateProduct'])->name('update-product');
 
 });
