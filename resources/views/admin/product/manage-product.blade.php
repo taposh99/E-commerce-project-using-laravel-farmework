@@ -48,12 +48,12 @@
 
 
                                 <a href="{{route('edit',['id'=>$product->id])}}" class="btn btn-primary">Edit</a>
-                            <form action="" method="post">
-                                @csrf
-                                <input type="hidden" name="blog_id" value="">
-                                <input type="submit" value="Delete" class="btn btn-danger" onclick="return confirm('Are You Sure !!')">
-                            </form>
-                        </td>
+                                <form action="{{route('delete')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name="product_id" value="{{$product->id}}">
+                                    <input type="submit" value="Delete" class="btn btn-danger" onclick="return confirm('Are You Sure !!')">
+                                </form>
+                             </td>
 
                     </tr>
                     @endforeach

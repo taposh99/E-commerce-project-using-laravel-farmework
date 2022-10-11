@@ -70,6 +70,15 @@ class ProductController extends Controller
         $product->save();
         return redirect('manage-product');
     }
+    public function delete(Request $request){
+        $product=Product::find($request->product_id);
+        if ($product->image){
+            unlink($product->image);
+        }
+        $product->delete();
+        return back()->with('message','Deleted');
+
+    }
 
 
 }

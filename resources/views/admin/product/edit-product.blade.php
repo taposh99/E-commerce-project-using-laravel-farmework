@@ -12,7 +12,7 @@
                     <div class="card-body">
                         <form action="{{route('update-product')}}" method="post" enctype="multipart/form-data">
                             @csrf
-                            <input type="hidden" value="{{$product->product_id}}" name="product_id">
+                            <input type="hidden" value="{{$product->id}}" name="product_id">
                             <div class="row mb-3">
                                 <div class="col-md-6">
                                     <div class="form-floating mb-3 mb-md-0">
@@ -29,7 +29,7 @@
                             </div>
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="inputEmail" type="text"value="{{$product->brand_name}}" name="brand_name" placeholder="brand_name" />
-                                <label for="inputEmail">Brand name</label>
+
                             </div>
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="inputEmail" type="text" value="{{$product->price}}"name="price" placeholder="price" />
