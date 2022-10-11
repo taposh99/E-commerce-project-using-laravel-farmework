@@ -30,5 +30,9 @@ Route::middleware([
 //    })->name('dashboard');
 
     Route::get('/dashboard',[\App\Http\Controllers\AdminController:: class,'index'])->name('dashboard');
+    Route::get('/add-product',[\App\Http\Controllers\ProductController:: class,'addProduct'])->name('add-product');
+    Route::get('/manage-product',[\App\Http\Controllers\ProductController:: class,'manageProduct'])->name('manage-product');
+    Route::post('/new-product',[\App\Http\Controllers\ProductController:: class,'saveProduct'])->name('new-product');
+    Route::get('/status/{id}',[\App\Http\Controllers\ProductController:: class,'status'])->name('status');
 
 });
