@@ -75,8 +75,8 @@
     <!-- Category -->
     <section class="featured-Category">
         <div class="categoryHeader">
-            <h2>Featured Category</h2>
-            <p>Get Your Desired Product from Featured Category!</p>
+            <h2>Next feature Category</h2>
+            <p>Get Product</p>
         </div>
         <div class="container">
             <div class="row">
