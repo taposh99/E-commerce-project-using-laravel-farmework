@@ -69,7 +69,7 @@
     </section>
     <!-- notice -->
     <div class="text_animation">
-        <p id="pot"><?php echo date('jS F l'); ?>, Laptop Point bd Get exciting discount on Laptop. Head Office: Shop No-08, Madbor Mansion,3/3 Begum Rokeya Sharany,Mirpur-10.
+        <p id="pot"><?php echo date('jS F l'); ?>, Laptop Poiont bangladesh,great feature. Head Office: Shop No-08, Madbor Mansion,3/3 Begum Rokeya Sharany,Mirpur-10.
         </p>
     </div>
     <!-- Category -->
