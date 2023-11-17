@@ -12,8 +12,7 @@
                                     <th>SL</th>
                                     <th>name</th>
                                     <th>email</th>
-                                    <th>phone</th>
-
+                                    <th>phone list</th>
                                     <th>product_name</th>
                                     <th>price</th>
                                     <th>offer</th>

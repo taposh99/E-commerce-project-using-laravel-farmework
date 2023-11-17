@@ -69,14 +69,14 @@
     </section>
     <!-- notice -->
     <div class="text_animation">
-        <p id="pot"><?php echo date('jS F l'); ?>, Laptop Poiont bangladesh,great feature. Head Office: Shop No-08, Madbor Mansion,3/3 Begum Rokeya Sharany,Mirpur-10.
+        <p id="pot"><?php echo date('jS F l'); ?>, new office. Head Office: Shop No-08, Madbor Mansion,3/3 Begum Rokeya shoroni,Mirpur-10.
         </p>
     </div>
     <!-- Category -->
     <section class="featured-Category">
         <div class="categoryHeader">
             <h2>Next feature Category</h2>
-            <p>Get Product</p>
+            <p>new Product</p>
         </div>
         <div class="container">
             <div class="row">
