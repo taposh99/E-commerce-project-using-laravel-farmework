@@ -29,7 +29,7 @@
                                     <hr class="p-0 ">
                                 </div>
                                 <div class="col-lg-12 pt-2">
-                                    <h5>Product Detail</h5>
+                                    <h5> more Product Details</h5>
                                     <span>
                                         {{ $product->product_description }}
                                     </span>
@@ -62,11 +62,8 @@
                                                     Buy Now
                                                 </button>
                                             </form>
-{{--                                            <input type="number" name="quantity" class="form-control text-center w-100"--}}
-{{--                                                 value="">--}}
-{{--                                                <button type="submit" class="btn btn-success w-100 text-center mt-2">--}}
-{{--                                                    Order Now--}}
-{{--                                                </button>--}}
+
+
                                             </div>
                                             <div class="col-lg-6 pb-2 mt-5 ">
                                                 <a href="{{ route('add.to.cart', $product->id) }}" class="btn btn-info w-100">
