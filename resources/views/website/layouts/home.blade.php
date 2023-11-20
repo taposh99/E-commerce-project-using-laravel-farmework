@@ -67,12 +67,12 @@
             </div>
         </div>
     </section>
-    <!-- notice -->
+    <!-- notice show-->
     <div class="text_animation">
         <p id="pot"><?php echo date('jS F l'); ?>, new office. Head Office: Shop No-08, Madbor Mansion,3/3 Begum Rokeya shoroni,Mirpur-10.
         </p>
     </div>
-    <!-- Category -->
+    <!-- Category list -->
     <section class="featured-Category">
         <div class="categoryHeader">
             <h2>Next feature Category</h2>
@@ -98,7 +98,7 @@
         </div>
         <br><br><br><br><br><br>
     </section>
-    <!-- product -->
+    <!-- product list -->
     <section class="featured-Product border">
         <div class="productHeader">
             <h2>Featured Product</h2>

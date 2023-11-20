@@ -59,7 +59,7 @@
                                                 <input type="number" min="1" name="quantity" class="form-control w-100"
                                                     value="1">
                                                 <button type="submit" class="btn btn-success w-100 text-center mt-2">
-                                                    Buy Now
+                                                    Buy product
                                                 </button>
                                             </form>
 
